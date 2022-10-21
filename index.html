@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ html {
+         margin: 0;
+         padding: 0;
+  }
+header{
+          width: 100vw;
+	height: 80px;
+ 	position: scroll;
+	top: 0;
+	background-color: grey;
+          border-bottom: 1px solid grey;
+	z-index: 1;
+}
+
+ 	nav{
+		height: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+ 		overflow: hidden;
+
+}
+
+	nav-link{
+	text-transform: uppercase;
+	color: Black;
+	font: 20px sans-serif;
+	padding: 100% 25px;
+	
+}
+ 	nav-link hover{
+		background-color: red;
+		color: grey;
+}
+
+	body{
+		font-family: Aria, Helvtica, sans-serif;
+		font-size: 13pt;
+		background-color: white;
+		padding: 10px;
+		margin: 1;
+}
+
+ h1{ 
+	font-size: 15pt;
+	color: black;
+	text-align: center;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0:
+}
+
+  h1 span{
+	border: 1px solid grey;
+	padding: 10px;
+	}
+p{
+	padding: 0;
+	margin: 0;
+}
+	
+	img-circle{
+	border: 3px solid grey;
+	border-radius: 50%;
+}
+ .main{
+	border: 15px solid white;
+}
+	
+.section{
+	background-color: white;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+	
+#header{
+	background-image url("https://uploads-ssl.webflow.com/5e4dfa5d58d02b574c094981/5e61b936452770f1cc437223_Render%20Engine%20Blur.jpg");
+	background-size: cover;
+}
+#header img{
+	display:block;
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+#header p{
+	font-size: 25pt;
+	color: black;
+	padding-top: 5px;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+}
+.selected{
+	background-color: #136f48;
+	font-weight: bold;
+	color: white4:27 PM 10/21/2022;
+}
+gallery{
+	display: flex;
+	flex-wrap: wrap;
+	/* Copensate for excess margin on outer gallery flex items*/
+	margin: -1rem -1rem;
+}
+gallery-item{
+	/*Mnimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse*/
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0, 0.4);
+	overflow: hidden;
+	}
+gallery-image{
+	display: block;
+	width: 80%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+gallery-image:hover{
+	transform: scale(1.15);
+}
+li{
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+progress{
+	width: 70%;
+	height: 20px;
+	color: black;
+	background: #000;
+}
+hr{
+	border: 0;
+	height: 1px;
+	background: #f36f48;
+}
+	form{
+		text-align: center;
+		margin-top: 0;
+	}
+submit{
+	background-color: white;
+	padding: 12px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+ 	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
+}
+.submit:hover{
+	background-color: black;
+}
+textarea{
+	height: 100px;
+	}
+input, textarea{
+	margin-bottom: 10px;
+	font-size: 11pt;
+	padding; 15px 10px 10px;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: grey;
+	border-radius: 5px;
+	width: 70%;
+	outline: none;
+}
+.face{
+	transform: scale(0.4);
+	margin: 0 auto;
+	display: block;
+	margin-top: -35px;
+	margin-bottom: -25px;
+}
+#contacts img{
+	height: 50px;
+	width: 50px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+#contacts a{
+	text-decoration: none;
+}
+#contacts img:hover{
+	opacity: 0.8;
+	}
+#contacts{
+	text-align: center;
+	}
+.info{
+	border: 2px solid grey;
+	color: grey;
+	width: 150px;
+	margin: 5px;
+	font-size: 15px;
+}
+copyright{
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 10px;
+	color: black;
+}
+
+.list-section{
+	width: 50%;
+	margin: auto;
+}
+</style>
+
+<title>Portfolio</title>
+</head>
+<body>
+<header>
+        <nav id="navbar">
+        <a href="#" class="nav-link">About Me</a>
+        <a href="#work" class="nav-link">My Projects</a>
+        <a href="#skills" class="nav-link">My Skills</a>
+        <a href="#Contact" class="nav-link">Contact</a>
+         </nav>
+      </header>
+ <div id="header" class="section">
+         <img alt="" class="img-circle"
+src="https://imgs.search.brave.com/OFtFPRvplbS100NG-D1CwnzEl73NlMSOcDwKiIFBiok/rs:fit:469:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5u/T0JEemVoejZ3Qy1i/dWs4dHJHX3lRSGFI/ZiZwaWQ9QXBp">
+<p>Sholeh Mohd</p>
+</div>
+<div class="section">
+<h1 id=#><span>About Myself</span></h1>
+<p>
+Hey! I'm <b>Sholeh</b>Hey! Its me Sholeh I am currently studying in grade 9.I am a student of span int academy really really Love reading Novels my favourite one yet is "they both die at the end" I also love writing as i often dive in and write about my life in my journal Aria My life nowadays is a complete mess as a often don't know when to do and what to do? the only thing i can still expect is a better future.</p>
+
+</div>
+
+<div class="section">
+<h1 id=#><span>My Projects</span></h1>
+<div class="gallery">
+
+<div class="gallery item">
+
+  <img class="gallery-image" src="https://imgs.search.brave.com/oZe1uo3Xn4FRB3ILF3ePiZrk12NPouWvVyi9gw0nkUs/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5o/dExoODJfUlI4VUZQ/dE43M1RCS2xRSGFF/SyZwaWQ9QXBp"" alt="Aesthetics">
+</div>
+
+<div class="gallery item">
+               <img class="gallery-image" src="https://imgs.search.brave.com/7GBXbJTz2K5_Mr5ZpuwS2KcpoqMJU4iaWOa_S5OR7q0/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC45/dEVqbjJidXQ5QzBa/SVhZTUkweS1BSGFF/SyZwaWQ9QXBp"" alt="Aesthet">
+<div class="section">
+<h1 id=skills><span>My Skills</span></h1>
+<ul>
+
+<li>Teamwork<br />
+<progress min="0" max="100" value="40"></progress>
+</li>
+<li>Adaptibility<br />
+<progress min="0" max="100" value="60"></progress>
+</li>
+<li>Public Speaking<br />
+<progress min="0" max="100" value="95"></progress>
+</li>
+<li>Athleticm<br />
+<progress min="0" max="100" value="60"></progress>
+
+</ul>
+
+</div>
+
+<div class="section">
+     <h1 id=contact><span>Contact Me</span></h1>
+<form action="Sholeh.Mohd1@gmail.com" method="post" enctype="text/plain">
+<input name="name" placeholder="Name" type="text" required/><br/>
+<input name="email" placeholder="Email" type="email" required/><br/>
+<input name="message" placeholder="Message" required><br />
+<input type="submit" value="SEND" class="submit"/>
+</form>
+
+</div>
+
+<div class="section" id="contacts">
+ <h1><span>Follow Me</span></h1>
+<div>
+<a href="Sholehh">
+<img alt="Instagram" src="https://imgs.search.brave.com/juCmWP126LB8sY8zE3gkSTcdy_JlK5QQcFfio-ldjUk/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5j/d2I0Z3lld2hxREV0/MFZhT3JqQk9RSGFI/YSZwaWQ9QXBp"/>
+
+</a>
+</div>
+
+<div class="copyright">
+   &copy;2020 A sincere Student with All rights reserved
+</div>
+
+</body>
+</html>
